@@ -8,12 +8,21 @@ import { HeaderService } from './header.service';
 })
 export class HeaderComponent implements OnInit {
 
-  menus : string[];
+  menus: string[];
+  menuAtivo: string;
 
-  constructor(private headerService : HeaderService) { 
+  constructor(private headerService: HeaderService) {
 
     this.menus = this.headerService.getMenus();
+
   }
+  setMenuAtivo(menuAtivo: string) {
+    this.menuAtivo = menuAtivo;
+  }
+  getMenuAtivo() {
+    return this.menuAtivo;
+  }
+
 
   ngOnInit() {
   }

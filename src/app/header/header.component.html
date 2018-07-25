@@ -1,5 +1,5 @@
 <ul class="nav nav-tabs">
-  <li class="nav-item" *ngFor="let menu of menus" >
-    <a class="nav-link" href="#">{{menu}}</a>
+  <li class="nav-item" *ngFor="let itemMenu of menus" >
+    <a class="nav-link" [class.active]="itemMenu == getMenuAtivo()" href="#" (click)="setMenuAtivo(itemMenu)" #menu >{{itemMenu}} </a>
   </li>
 </ul>
