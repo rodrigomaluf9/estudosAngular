@@ -5,13 +5,14 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { routing } from './app.routing';
 import { LoginModule } from './login/login.module';
+import { ProdutosModule } from './produtos/produtos.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, HeaderModule, LoginModule, routing
+    BrowserModule, HeaderModule, LoginModule, ProdutosModule, routing
     
   ],
   providers: [],
