@@ -3,12 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class HeaderService {
+export class LoginService {
 
   constructor() { }
-
-  getMenus(){
-
-    return ['Login','Produtos','Serviços'];
-  }
 }
