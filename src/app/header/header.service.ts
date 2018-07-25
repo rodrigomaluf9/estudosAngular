@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
+import { Menu } from '../shared/menu';
 
-@Injectable({
+@Injectable({ 
   providedIn: 'root'
 })
 export class HeaderService {
@@ -8,7 +9,9 @@ export class HeaderService {
   constructor() { }
 
   getMenus(){
-
-    return ['Login','Produtos','Serviços'];
+    let login = new Menu("login", "Login");
+    let produtos = new Menu("produtos", "Produtos");
+    let servicos = new Menu("servicos", "Serviços");
+    return [ login, produtos, servicos];
   }
 }
