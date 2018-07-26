@@ -1,7 +1,6 @@
 <ul class="nav nav-tabs">
   <li class="nav-item" *ngFor="let itemMenu of menus" routerLinkActive="active">
-    <a class="nav-link" [class.active]="itemMenu.menu == getMenuAtivo()" href="/{{ itemMenu.link }}"  (click)="setMenuAtivo(itemMenu.menu)" #menu >{{ itemMenu.menu }} </a>
+    <a class="nav-link" [class.active]="itemMenu.menu == getMenuAtivo()" href="/{{ itemMenu.link }}" (click)="setMenuAtivo(itemMenu.menu)"
+      #menu>{{ itemMenu.menu }} </a>
   </li>
 </ul>
-
-
